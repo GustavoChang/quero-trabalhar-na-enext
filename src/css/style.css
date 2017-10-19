@@ -11,6 +11,15 @@ input {
   min-height: 45px;
   padding: 5px 10px;
 }
+button {
+  width: 100%;
+  background-color: #D73A1E;
+  border: none;
+  border-radius: 5px;
+  min-height: 45px;
+  color: #ffffff;
+  font-size: 18px;
+}
 .header {
   background-color: #ffffff;
 }
@@ -25,18 +34,26 @@ input {
   padding: 30px 20px;
 }
 .footer-contacts {
+  font-family: 'Droid Sans';
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer-contacts td {
+  vertical-align: top;
+}
+.footer-contacts a {
+  text-decoration: none;
+  color: #444444;
 }
 .footer-form {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 20px;
 }
-.footer-form button {
-  width: 100%;
-  background-color: #D73A1E;
-  border: none;
-  border-radius: 5px;
-  min-height: 45px;
-  color: #ffffff;
-  font-size: 18px;
+.item {
+  text-align: center;
+}
+.item-img {
+  height: auto;
+  width: 380px;
 }

@@ -1,6 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Droid Sans' rel='stylesheet'>
 </head>
 <body>
   <table border="1">
@@ -10,10 +11,12 @@
         <table class="header">
           <tr>
             <td>
-              <img src="img/logo.png" alt="">
+              <img src="img/logo.png" alt="LOGO">
             </td>
-            <td>
-              <input type="text" name="" value="">
+            <td style="width: 30%;">
+              <form method="POST">
+                <input type="text" name="" value="" placeholder="Search">
+              </form>
             </td>
             <td>
               <img src="img/bag.png" alt="">
@@ -57,7 +60,21 @@
       <!-- CATALOGO -->
       <table class="catalog">
         <tr>
-          <td>CATALOGO</td>
+          <td class="item">
+            <img class="item-img" src="img/products/aging-potion.png" alt="">
+            <br>
+            <span>NOME PRODUTO</span>
+          </td>
+          <td class="item">
+            <img class="item-img" src="img/products/aging-potion.png" alt="">
+            <br>
+            <span>NOME PRODUTO</span>
+          </td>
+          <td class="item">
+            <img class="item-img" src="img/products/aging-potion.png" alt="">
+            <br>
+            <span>NOME PRODUTO</span>
+          </td>
         </tr>
       </table>
     </tr>
@@ -69,8 +86,7 @@
             <table class="footer-contacts">
               <tr>
                 <td>
-                  COMPANY<br />
-                  RETURNS
+                  <a href="/company" target="_blank">COMPANY<br />RETURNS</a>
                 </td>
                 <td>
                   CONTACT US<br />
@@ -89,26 +105,29 @@
             </table>
           </td>
           <td style="width: 50%; padding-left: 20px;">
-            <table class="footer-form">
-              <tr>
-                <td colspan="2">Sign up for our Newsletter</td>
-              </tr>
-              <tr>
-                <td colspan="2">Sign up for our newsletter & get exclusive dicounts!</td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" name="" value="" placeholder="Enter your email">
-                </td>
-                <td>
-                  <button type="button" name="button">SUBMIT</button>
-                </td>
-              </tr>
-            </table>
+            <form method="POST">
+              <table class="footer-form">
+                <tr>
+                  <td colspan="2">Sign up for our Newsletter</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Sign up for our newsletter & get exclusive dicounts!</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="email" name="newsEmail" placeholder="Enter your email">
+                  </td>
+                  <td>
+                    <button type="submit">SUBMIT</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
           </td>
         </tr>
       </table>
     </tr>
   </table>
+  <script src="js/main.js"></script>
 </body>
 </html>
