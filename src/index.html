@@ -1,28 +1,28 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Droid Sans' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
 </head>
 <body>
-  <table border="1">
+  <table>
     <tr>
       <!-- HEADER -->
       <td>
         <table class="header">
           <tr>
-            <td>
-              <img src="img/logo.png" alt="LOGO">
+            <td style="width: 30%:">
+              <img src="img/logo.PNG" alt="LOGO">
             </td>
             <td style="width: 30%;">
               <form method="POST">
-                <input type="text" name="" value="" placeholder="Search">
+                <input type="text" name="" value="" placeholder="Search our stock">
               </form>
+            <td class="merchandise-counter">
+              <img src="img/freeshipping.png" alt=""/>
+              <img src="img/witchbrew.png" alt="" />
             </td>
             <td>
-              <img src="img/bag.png" alt="">
-            </td>
-            <td>
-              BAG: 1
+              <span style="vertical-align:center;">BAG: <span style="color:red;">1</span></span>
             </td>
           </tr>
         </table>
@@ -33,25 +33,73 @@
       <table class="nav">
         <tr>
           <td>
-            1
+            <div class="dropdown">
+              <button class="dropbtn"><em>Potions</em> &#9660</button>
+              <div class="dropdown-content">
+                <a href="#">Damage Potions</a>
+                <a href="#">Buff Potions</a>
+                <a href="#">Debuff Potions</a>
+                <a href="#">Beauty Potions</a>
+                <a href="#">Healing Potions</a>
+                <a href="#" style="color:red;">Forbidden Potions</a>
+              </div>
+            </div>
           </td>
           <td>
-            2
+            <div class="dropdown">
+              <button class="dropbtn"><em>Ingredients</em> &#9660</button>
+              <div class="dropdown-content">
+                <a href="#">Animal Pieces</a>
+                <a href="#">Plant Samples</a>
+                <a href="#">Mineral</a>
+                <a href="#" style="color:red;">Rare Ingrediants</a>
+              </div>
+            </div>
           </td>
           <td>
-            3
+            <div class="dropdown">
+              <button class="dropbtn"><em>Books</em> &#9660</button>
+              <div class="dropdown-content">
+                <a href="#">Recipes</a>
+                <a href="#">Spells for dummies</a>
+                <a href="#">Skill-Learning Books</a>
+                <a href="#">Sword Mastery Guide</a>
+                <a href="#">DIY</a>
+                <a href="#" style="color:red;">Enchiridion</a>
+              </div>
+            </div>
           </td>
           <td>
-            4
+            <div class="dropdown">
+              <button class="dropbtn"><em>Supplies</em> &#9660</button>
+              <div class="dropdown-content">
+                <a href="#">Tools</a>
+                <a href="#">Weapons</a>
+                <a href="#">Armour</a>
+              </div>
+            </div>
           </td>
           <td>
-            5
+            <div class="dropdown">
+              <button class="dropbtn"><em>Charms</em> &#9660</button>
+              <div class="dropdown-content">
+                <a href="#">Luck Charms</a>
+                <a href="#">Cursed Charms</a>
+                <a href="#" style="color: red;">Legendary Artifacts</a>
+              </div>
+            </div>
           </td>
           <td>
-            6
+            <td style=" border-radius: 5px; background-color: #422C5A; text-align: center;">
+              <em>Clearence!</em>
+            </td>
+          </td>
+          <td style="width: 35%;">
           </td>
           <td>
-            7
+            <a href="/signin" target="_blank"><em>Sign In</em></a>
+            <span style="color: #A3A3A3">or</span>
+            <a href="/signup" target="_blank"><em>Sign Up</em></a>
           </td>
         </tr>
       </table>
@@ -60,20 +108,42 @@
       <!-- CATALOGO -->
       <table class="catalog">
         <tr>
+          <td style="padding:0px 40px; font-size:25px; font-weight:bold;">
+            <span>Potions</span>
+          </td>
+        </tr>
+        <tr>
           <td class="item">
             <img class="item-img" src="img/products/aging-potion.png" alt="">
             <br>
-            <span>NOME PRODUTO</span>
+            <span>Aging Potion - <span>$29.99</span></span>
           </td>
           <td class="item">
-            <img class="item-img" src="img/products/aging-potion.png" alt="">
+            <img class="item-img" src="img/products/bulgeye-potion.png" alt="">
             <br>
-            <span>NOME PRODUTO</span>
+            <span>Bulgeye Potion - <span>$19.99</span></span>
           </td>
           <td class="item">
-            <img class="item-img" src="img/products/aging-potion.png" alt="">
+            <img class="item-img" src="img/products/dragon-tonic.png" alt="">
             <br>
-            <span>NOME PRODUTO</span>
+            <span>Dragon Tonic - <span>$64.99</span></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="item">
+            <img class="item-img" src="img/products/love-potion.png" alt="">
+            <br>
+            <span>Love Potion - <span>$29.99</span></span>
+          </td>
+          <td class="item">
+            <img class="item-img" src="img/products/polyjuice-potion.png" alt="">
+            <br>
+            <span>Polyjuice Potion - <span>$99.99</span></span>
+          </td>
+          <td class="item">
+            <img class="item-img" src="img/products/sleeping-draught.png" alt="">
+            <br>
+            <span>Sleeping Draught - <span>$14.99</span></span>
           </td>
         </tr>
       </table>
@@ -86,21 +156,32 @@
             <table class="footer-contacts">
               <tr>
                 <td>
-                  <a href="/company" target="_blank">COMPANY<br />RETURNS</a>
+                  <a href="/company" target="_blank">COMPANY</a>
+                  <br />
+                  <a href="/returns" target="_blank">RETURNS</a>
                 </td>
                 <td>
-                  CONTACT US<br />
-                  CAREERS
+                  <a href="/contact" target="_blank">CONTACT US</a>
+                  <br />
+                  <a href="/careers" target="_blank">CAREERS</a>
                 </td>
                 <td>
-                  SHIPPING
+                  <a href="/shipping" target="_blank">SHIPPING</a>
                 </td>
               </tr>
               <tr>
-                <td colspan="3"></td>
+                <td colspan="3">
+                  <a href="/facebook" target="_blank"><img src="img/socialmedia/facebook.png" alt="" /></a>
+                  <a href="/twitter" target="_blank"><img src="img/socialmedia/twitter.png" alt="" /></a>
+                  <a href="/pinterest" target="_blank"><img src="img/socialmedia/pinterest.png" alt="" /></a>
+                  <a href="/tumbler" target="_blank"><img src="img/socialmedia/tumblr.png" alt="" /></a>
+                  <a href="/googleplus" target="_blank"><img src="img/socialmedia/googleplus.png" alt="" /></a>
+                </td>
               </tr>
               <tr>
-                <td colspan="3"></td>
+                <td colspan="3">
+                  <span style="color:#777777;">&#169 2015 Merlin's Potions. All rights Reserved</span>
+                </td>
               </tr>
             </table>
           </td>
@@ -108,7 +189,7 @@
             <form method="POST">
               <table class="footer-form">
                 <tr>
-                  <td colspan="2">Sign up for our Newsletter</td>
+                  <td colspan="2"><em>Sign up for our Newsletter</em></td>
                 </tr>
                 <tr>
                   <td colspan="2">Sign up for our newsletter & get exclusive dicounts!</td>
@@ -128,6 +209,5 @@
       </table>
     </tr>
   </table>
-  <script src="js/main.js"></script>
 </body>
 </html>
