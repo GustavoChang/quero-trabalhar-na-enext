@@ -18,9 +18,9 @@ index.html
 
 # Contact
 
-Nome do candidato: Gustavo Chang
+Name: Gustavo Chang
 
-Email: gustavo.chang@usp.br
+E-mail: gustavo.chang@usp.br
 
 [git]: https://git-scm.com/
 
