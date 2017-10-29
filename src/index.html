@@ -2,8 +2,9 @@
 <head>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
+  <script src="js/conceitos.js"></script>
 </head>
-<body>
+<body onload = 'start()'>
   <table>
     <tr>
       <!-- HEADER -->
@@ -107,45 +108,13 @@
     <tr>
       <!-- CATALOGO -->
       <table class="catalog">
-        <tr>
-          <td style="padding:0px 40px; font-size:25px; font-weight:bold;">
-            <span>Potions</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="item">
-            <img class="item-img" src="img/products/aging-potion.png" alt="">
-            <br>
-            <span>Aging Potion - <span>$29.99</span></span>
-          </td>
-          <td class="item">
-            <img class="item-img" src="img/products/bulgeye-potion.png" alt="">
-            <br>
-            <span>Bulgeye Potion - <span>$19.99</span></span>
-          </td>
-          <td class="item">
-            <img class="item-img" src="img/products/dragon-tonic.png" alt="">
-            <br>
-            <span>Dragon Tonic - <span>$64.99</span></span>
-          </td>
-        </tr>
-        <tr>
-          <td class="item">
-            <img class="item-img" src="img/products/love-potion.png" alt="">
-            <br>
-            <span>Love Potion - <span>$29.99</span></span>
-          </td>
-          <td class="item">
-            <img class="item-img" src="img/products/polyjuice-potion.png" alt="">
-            <br>
-            <span>Polyjuice Potion - <span>$99.99</span></span>
-          </td>
-          <td class="item">
-            <img class="item-img" src="img/products/sleeping-draught.png" alt="">
-            <br>
-            <span>Sleeping Draught - <span>$14.99</span></span>
-          </td>
-        </tr>
+        <tbody id="catalogContainer">
+          <tr>
+            <td style="padding:0px 40px; font-size:25px; font-weight:bold;">
+              <span>Potions</span>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </tr>
     <tr>
