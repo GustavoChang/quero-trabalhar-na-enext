@@ -11,7 +11,7 @@ input {
   min-height: 45px;
   padding: 5px 10px;
 }
-button {
+.buttonRed {
   width: 100%;
   background-color: #D73A1E;
   border: none;
@@ -19,6 +19,11 @@ button {
   min-height: 45px;
   color: #ffffff;
   font-size: 18px;
+}
+.buttonClose{
+  text-align:right;
+  background: rgba(0,0,0,0);
+  border:none;
 }
 .header {
   background-color: #ffffff;
@@ -50,6 +55,7 @@ button {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    white-space: nowrap;
 }
 .dropdown {
     position: relative;
@@ -123,4 +129,33 @@ button {
 .item-img {
   height: auto;
   width: 380px;
+}
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,.6);
+}
+.lightbox-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 600px;
+  z-index: 2;
+}
+.lightbox-content img {
+  max-width: 300px;
+}
+.lightbox-content ul{
+  list-style-type: none;
+  padding: 0;
+}
+#lightboxPrice{
+  color:red;
 }
