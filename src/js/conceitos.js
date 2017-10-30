@@ -72,6 +72,7 @@ function openLightbox(itemData){
   document.getElementById("lightboxPotion").style = "display: block;";
   document.getElementById("lightboxName").innerHTML = itemData.name;
   document.getElementById("lightboxUseEffect").innerHTML = itemData.effect;
+  document.getElementById("lightboxImage").innerHTML = "<img src='img/products/"+itemData.image+"'>";
   var ul = document.getElementById("lightboxIngredients");
   ul.innerHTML = "";
   for(var i=0; i<itemData.ingredients.length; i++){
