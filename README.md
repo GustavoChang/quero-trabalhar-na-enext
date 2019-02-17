@@ -18,7 +18,7 @@ index.html
 
 # Contact
 
-Name: Gustavo Chang Chang
+Name: ~@ Gustavo Chang @~
 
 E-mail: gustavo.chang@usp.br
 
